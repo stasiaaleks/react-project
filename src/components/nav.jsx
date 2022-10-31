@@ -1,33 +1,43 @@
-const Nav = () => {
+function Logo() {
+  return (
+    <img
+      className="nav__logo"
+      src="https://logos-world.net/wp-content/uploads/2021/12/DnD-Symbol.png"
+      alt=""
+    />
+  );
+}
+
+function Nav() {
   return (
     <ul className="nav">
       <li className="nav__item">
         <a className="nav__link" href="#">
-          link
+          Персонаж
         </a>
       </li>
       <li className="nav__item">
         <a className="nav__link" href="#">
-          link
+          Статистики
         </a>
       </li>
       <li className="nav__item">
         <a className="nav__link" href="#">
-          link
+          Снаряжение
+        </a>
+      </li>
+      <li className="nav__item">
+        <a className="nav__link" href="#">
+          Навыки
+        </a>
+      </li>
+      <li className="nav__item">
+        <a className="nav__link" href="#">
+          Предыстория
         </a>
       </li>
     </ul>
   );
-};
-
-function Burger() {
-  return (
-    <>
-      <div>line</div>
-      <div>line</div>
-      <div>line</div>
-    </>
-  );
 }
 
-export { Nav, Burger };
+export { Logo, Nav };

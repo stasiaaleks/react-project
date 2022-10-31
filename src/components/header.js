@@ -1,11 +1,10 @@
-import { Nav, Burger } from "./nav";
+import { Logo, Nav } from "./Nav";
 
 function Header() {
   return (
     <header className="header">
-      <a href="#">LOGO</a>
+      <Logo></Logo>
       <Nav></Nav>
-      <Burger></Burger>
     </header>
   );
 }
