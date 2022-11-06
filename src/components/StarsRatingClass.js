@@ -14,14 +14,13 @@ class ShowStarsClass extends React.Component {
       <div className="stars-container">
         <p>Class one:</p>
         {[...new Array(5)].map((item, i) => {
-          i += 1; // why tf this works like this
+          i += 1;
           return (
             <Star
               key={i}
               className={`star ${i <= this.state.rate ? "active" : ""}`}
               onClick={() => {
                 this.setState({ ...this.state, rate: i });
-                console.log(this.state.rate);
               }}
             ></Star>
           );
