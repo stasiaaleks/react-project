@@ -5,7 +5,7 @@ class ShowStarsClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      rate: 0,
+      rate: 2,
     };
   }
 

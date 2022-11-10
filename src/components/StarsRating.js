@@ -2,7 +2,7 @@ import { useState } from "react";
 import Star from "./Star";
 
 function ShowStars() {
-  const [rate, setRate] = useState(0);
+  const [rate, setRate] = useState(3);
 
   return (
     <div className="stars-container">
@@ -16,6 +16,7 @@ function ShowStars() {
             onClick={() => {
               setRate(i);
             }}
+            rate={i}
           ></Star>
         );
       })}
